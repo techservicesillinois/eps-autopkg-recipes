@@ -34,7 +34,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.mlbz521.pkg.QGIS</string>
+	<string>https://github.com/autopkg/MLBZ521-recipes/blob/master/QGIS/QGIS.pkg.recipe</string>
 	<key>Process</key>
 	<array>
 		<dict>
