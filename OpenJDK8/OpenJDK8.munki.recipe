@@ -33,7 +33,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.grahampugh-recipes/EclipseTemurin/EclipseTemurin8.pkg.recipe</string>
+	<string>com.github.grahampugh.recipes.pkg.EclipseTemurin-8</string>
 	<key>Process</key>
 	<array>
 		<dict>
