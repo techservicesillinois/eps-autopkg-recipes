@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest stable OpenSCAD and creates flat *.pkg installer.</string>
 	<key>Identifier</key>
-	<string>com.github.eps-autopkg-recipes.pkg.OpenSCAD</string>
+	<string>com.github.eps-autopkg-recipes.pkg.openscad</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>
 	<key>ParentRecipe</key>
-	<string>com.github.eps-autopkg-recipes.download.OpenSCAD</string>
+	<string>com.github.eps-autopkg-recipes.download.openscad</string>
 	<key>Process</key>
 	<array>
 		<dict>
