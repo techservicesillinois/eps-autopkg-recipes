@@ -29,7 +29,7 @@
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>19.0</string>
+	<string>2.4</string>
 	<key>ParentRecipe</key>
 	<string>com.github.grahampugh.recipes.download.FileMakerPro</string>
 	<key>Process</key>
