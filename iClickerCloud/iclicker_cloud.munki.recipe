@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of iClicker Cloud and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.eps-autopkg-recipes.munki.iclicker_cloud</string>
+	<string>com.github.eps-autopkg-recipes.munki.iclickercloud</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -35,7 +35,7 @@
 	<key>MinimumVersion</key>
 	<string>0.2.9</string>
 	<key>ParentRecipe</key>
-	<string>com.github.eps-autopkg-recipes.download.iclicker_cloud</string>
+	<string>com.github.eps-autopkg-recipes.download.iclickercloud</string>
 	<key>Process</key>
 	<array>
 		<dict>
