@@ -8,62 +8,60 @@
 	<string>com.github.eps-autopkg-recipes.download.iclickercloud</string>
 	<key>Input</key>
 	<dict>
-		<key>DOWNLOAD_URL</key>
-		<string>https://artifactory.reef-education.com/artifactory/app-downloads</string>
 		<key>NAME</key>
-		<string>iclicker_cloud</string>
+		<string>iclicker-cloud</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
-	<dict>
-		  <key>Processor</key>
-		  <string>URLTextSearcher</string>
-		  <key>Arguments</key>
-		  <dict>
-			<key>url</key>
-			<string>%DOWNLOAD_URL%</string>
-			<key>re_pattern</key>
-			<string>href=\"(https://artifactory.reef-education.com/artifactory/app-downloads/iclicker-cloud-[0-9].[0-9].[0-9]-mac.dmg)\"</string>
-		</dict>
-	</dict>
-	<dict>
-		<key>Processor</key>
-		<string>URLDownloader</string>
-		<key>Arguments</key>
 		<dict>
-			  <key>url</key>
-			  <string>%match%</string>
-			  <key>filename</key>
-			  <string>%NAME%.pkg</string>
-		  </dict>
-	  </dict>
-	  <dict>
-		<key>Processor</key>
-		<string>CodeSignatureVerifier</string>
-		<key>Arguments</key>
-		<dict>
-		  <key>input_path</key>
-		  <string>%pathname%/iClicker Cloud.app</string>
-		  <key>requirement</key>
-		  <string>anchor apple generic and identifier "com.macmillan.iclickercloud" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "5E845CEVPW")</string>
-		</dict>
-	  </dict>
-	  <dict>
 			<key>Processor</key>
-			<string>Versioner</string>
-	  		<key>Arguments</key>
+			<string>URLTextSearcher</string>
+			<key>Arguments</key>
 			<dict>
-				  <key>input_plist_path</key>
-				  <string>%pathname%/iClicker Cloud.app/Contents/Info.plist</string>
-				  <key>plist_version_key</key>
-				  <string>CFBundleShortVersionString</string>
+				<key>url</key>
+				<string>https://artifactory.reef-education.com/artifactory/app-downloads</string>
+				<key>re_pattern</key>
+				<string>href=\"(https://artifactory.reef-education.com/artifactory/app-downloads/iclicker-cloud-[0-9].[0-9].[0-9]-mac.dmg)\"</string>
 			</dict>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>%match%</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%pathname%/iClicker Cloud.app</string>
+				<key>requirement</key>
+				<string>anchor apple generic and identifier "com.macmillan.iclickercloud" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "5E845CEVPW")</string>
+			</dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>input_plist_path</key>
+				<string>%pathname%/iClicker Cloud.app/Contents/Info.plist</string>
+				<key>plist_version_key</key>
+				<string>CFBundleShortVersionString</string>
+			</dict>
+			<key>Processor</key>
+			<string>Versioner</string>
 		</dict>
 	</array>
 </dict>
