@@ -33,7 +33,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>local.pkg.Anaconda-Universal</string>
+	<string>com.github.mlbz521.pkg.Anaconda-Universal</string>
 	<key>Process</key>
 	<array>
 		<dict>
