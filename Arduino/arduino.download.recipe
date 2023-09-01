@@ -7,7 +7,7 @@
 
 Set the ARCHITECTURE variable to "64bit" for Intel
 
-Set the ARCHITECTURE variable to "ARM64" for Apple Silicone
+Set the ARCHITECTURE variable to "ARMarm64" for Apple Silicon (covers for both upper/lower case since the developers aren't consistent)
 
 </string>
     <key>Identifier</key>
@@ -27,7 +27,7 @@ Set the ARCHITECTURE variable to "ARM64" for Apple Silicone
             <key>Arguments</key>
             <dict>
                 <key>asset_regex</key>
-                <string>arduino-ide_(\d(\.\d)+)_macOS_%ARCHITECTURE%\.dmg</string>
+                <string>arduino-ide_(\d(\.\d)+)_macOS_[%ARCHITECTURE%]{5}\.dmg</string>
                 <key>github_repo</key>
                 <string>arduino/arduino-ide</string>
             </dict>
