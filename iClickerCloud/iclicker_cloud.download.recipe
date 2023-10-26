@@ -23,7 +23,7 @@
 				<key>url</key>
 				<string>https://www.iclicker.com/downloads/iclicker-cloud/</string>
 				<key>re_pattern</key>
-				<string>href=\"(https://artifactory.reef-education.com/artifactory/app-downloads/iclicker-cloud-[0-9].[0-9].[0-9]-mac.dmg)\"</string>
+				<string>href=\"(https://artifactory.iclicker.com/artifactory/app-downloads/iclicker-cloud-[0-9].[0-9].[0-9]-mac.dmg)\"</string>
 			</dict>
 		</dict>
 		<dict>
