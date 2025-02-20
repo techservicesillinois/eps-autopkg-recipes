@@ -13,7 +13,7 @@
 		<key>EXTENSION_ATTRIBUTE_NAME</key>
 		<string>Dockutil</string>
 		<key>EXTENSION_ATTRIBUTE_SCRIPT</key>
-		<string>ExtensionAttribute-Dockutil.sh</string>
+		<string>ExtensionAttribute-Dockutil-Version.sh</string>
 		<key>GROUP_NAME</key>
 		<string>VLC-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
