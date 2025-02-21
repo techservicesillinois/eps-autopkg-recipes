@@ -48,6 +48,8 @@
             <dict>
                 <key>input_plist_path</key>
                 <string>%RECIPE_CACHE_DIR%/unpack/crashplan.pkg/PackageInfo</string>
+                <key>plist_version_key</key>
+                <string>CFBundleShortVersionString</string>
             </dict>
         </dict>
         <dict>
