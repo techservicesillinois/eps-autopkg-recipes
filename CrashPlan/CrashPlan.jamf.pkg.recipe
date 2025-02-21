@@ -25,7 +25,7 @@
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
                 <key>source_path</key>
-                <string>%pathname%/Install Code42 CrashPlan.pkg</string>
+                <string>%pathname%/Install CrashPlan.pkg</string>
             </dict>
         </dict>
         <dict>
