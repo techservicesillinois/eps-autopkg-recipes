@@ -43,13 +43,24 @@
         </dict>
         <dict>
             <key>Processor</key>
+            <string>PkgPayloadUnpacker</string>
+            <key>Arguments</key>
+            <dict>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/application_payload/Applications</string>
+                <key>pkg_payload_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack/crashplan.pkg/Payload</string>
+                <key>purge_destination</key>
+                <string>true</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
             <string>Versioner</string>
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/crashplan.pkg/PackageInfo</string>
-                <key>plist_version_key</key>
-                <string>CFBundleShortVersionString</string>
+				<string>%RECIPE_CACHE_DIR%/application_payload/Applications/CrashPlan.app/Contents/Info.plist</string>
             </dict>
         </dict>
         <dict>
