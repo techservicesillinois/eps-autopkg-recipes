@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>Description</key>
@@ -9,7 +7,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>CrashPlanForEnterprise7</string>
+        <string>CrashPlan</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
@@ -43,38 +41,11 @@
         </dict>
         <dict>
             <key>Processor</key>
-            <string>PkgRootCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkgroot</key>
-                <string>%RECIPE_CACHE_DIR%/application_payload</string>
-                <key>pkgdirs</key>
-                <dict>
-                    <key>Applications</key>
-                    <string>0755</string>
-                </dict>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>PkgPayloadUnpacker</string>
-            <key>Arguments</key>
-            <dict>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/application_payload/Applications</string>
-                <key>pkg_payload_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/crashplan.pkg/Payload</string>
-                <key>purge_destination</key>
-                <string>true</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
             <string>Versioner</string>
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/application_payload/Applications/CrashPlan.app/Contents/Info.plist</string>
+                <string>%RECIPE_CACHE_DIR%/unpack/crashplan.pkg/PackageInfo</string>
             </dict>
         </dict>
         <dict>
