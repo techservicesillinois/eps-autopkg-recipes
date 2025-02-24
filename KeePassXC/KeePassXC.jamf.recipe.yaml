@@ -6,7 +6,7 @@ MinimumVersion: '2.3'
 Input:
   NAME: KeePassXC
   SOFTWARE_TITLE: '%NAME%'
-  ARCHITECTURE: 'x86_64'
+  ARCHITECTURE: 'arm64'
   ASSET_REGEX: 'KeePassXC-.*-%ARCHITECTURE%\.dmg'
   CATEGORY: Utilities
   GROUP_CRITERIA: '%ARCHITECTURE%'
@@ -15,15 +15,14 @@ Input:
   POLICY_CATEGORY: Testing
   POLICY_TEMPLATE: PolicyTemplate.xml
   POLICY_NAME: 'Global - %NAME% - Testing - ARM'
-  POLICY_RUN_COMMAND: ' '
-  SELF_SERVICE_DISPLAY_NAME: '%NAME%_%ARCHITECTURE%'
+  SELF_SERVICE_DISPLAY_NAME: '%NAME%-%ARCHITECTURE%'
   SELF_SERVICE_DESCRIPTION: |
     Never forget a password again.
     Securely store passwords using industry standard encryption, quickly auto-type them into desktop applications, and use our browser extension to log into websites.
   SELF_SERVICE_ICON: 'KeePassXC.png'
   TESTING_GROUP_NAME: 'Global - Software Testing - Update'
   INSTALL_BUTTON_TEXT: 'Install'
-  REINSTALL_BUTTON_TEXT: 'Install'
+  REINSTALL_BUTTON_TEXT: 'Reinstall'
   UPDATE_PREDICATE: 'pkg_uploaded == False'
   DOWNLOAD_PREDICATE: 'download_changed == False'
 
