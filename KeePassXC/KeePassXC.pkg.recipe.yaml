@@ -1,0 +1,11 @@
+Identifier: com.github.eps-autopkg-recipes.jamf.KeePassXC.pkg
+ParentRecipe: com.github.eps-autopkg-recipes.jamf.KeePassXC.download
+MinimumVersion: '2.3'
+
+Input:
+  NAME: KeePassXC
+
+Process:
+  - Processor: AppPkgCreator
+    Arguments:
+      pkg_path: '%RECIPE_CACHE_DIR%/%NAME%-%ARCHITECTURE%-%version%.pkg'
