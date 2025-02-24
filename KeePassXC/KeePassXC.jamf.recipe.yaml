@@ -40,6 +40,8 @@ Process:
       pkg_category: '%CATEGORY%'
 
   - Processor: PathDeleter
+    Arguments:
+      path_list: '%pkg_path%'
 
   - Processor: StopProcessingIf
     Arguments:
