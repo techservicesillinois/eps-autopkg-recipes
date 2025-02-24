@@ -1,28 +1,28 @@
 Comment: Set ARCHITECTURE to x86_64 or arm64
 Identifier: com.github.eps-autopkg-recipes.jamf.KeePassXC
-ParentRecipe: com.github.smithjw.sign.KeePassXC
+ParentRecipe: com.github.eps-autopkg-recipes.jamf.KeePassXC.sign
 MinimumVersion: '2.3'
 
 Input:
-  NAME: KeePassXC
-  SOFTWARE_TITLE: '%NAME%'
+  ARCH: 'arm64'
   ARCHITECTURE: 'arm64'
   ASSET_REGEX: 'KeePassXC-.*-%ARCHITECTURE%\.dmg'
-  CATEGORY: Utilities
+  CATEGORY: 'Utilities'
+  DOWNLOAD_PREDICATE: 'download_changed == False'
   GROUP_CRITERIA: '%ARCHITECTURE%'
-  GROUP_NAME: 'Architecture - %ARCHITECTURE%'
-  GROUP_TEMPLATE: 'SmartGroup-architecture-smart.xml'
-  POLICY_CATEGORY: Testing
-  POLICY_TEMPLATE: PolicyTemplate.xml
-  POLICY_NAME: 'Global - %NAME% - Testing - ARM'
-  SELF_SERVICE_DISPLAY_NAME: '%NAME%-%ARCHITECTURE%'
+  GROUP_NAME: 'Global - %NAME% - Testing -'
+  GROUP_TEMPLATE: 'SmartGroupTemplate.xml'
+  NAME: 'KeePassXC'
+  POLICY_CATEGORY: 'Software Testing (AutoPkg)'
+  POLICY_NAME: 'Global - %NAME% - Testing -'
+  POLICY_TEMPLATE: 'PolicyTemplate.xml'
   SELF_SERVICE_DESCRIPTION: |
     Never forget a password again.
     Securely store passwords using industry standard encryption, quickly auto-type them into desktop applications, and use our browser extension to log into websites.
   SELF_SERVICE_ICON: 'KeePassXC.png'
+  SIGNING_CERTIFICATE: 'Jamf_AutoPkg'
+  SOFTWARE_TITLE: '%NAME%'
   TESTING_GROUP_NAME: 'Global - Software Testing - Update'
-  INSTALL_BUTTON_TEXT: 'Install'
-  REINSTALL_BUTTON_TEXT: 'Reinstall'
   UPDATE_PREDICATE: 'pkg_uploaded == False'
 
 Process:
@@ -53,4 +53,3 @@ Process:
       policy_template: '%POLICY_TEMPLATE%'
       policy_name: '%POLICY_NAME%'
       icon: '%SELF_SERVICE_ICON%'
-      
