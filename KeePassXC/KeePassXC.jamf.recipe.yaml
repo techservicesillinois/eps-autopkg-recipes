@@ -24,12 +24,8 @@ Input:
   INSTALL_BUTTON_TEXT: 'Install'
   REINSTALL_BUTTON_TEXT: 'Reinstall'
   UPDATE_PREDICATE: 'pkg_uploaded == False'
-  DOWNLOAD_PREDICATE: 'download_changed == False'
 
 Process:
-  - Processor: StopProcessingIf
-    Arguments:
-      predicate: '%DOWNLOAD_PREDICATE%'
 
   - Processor: com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader
     Arguments:
