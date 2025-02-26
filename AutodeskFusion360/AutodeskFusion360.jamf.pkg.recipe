@@ -60,7 +60,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/application_payload/Applications/Autodesk\ Fusion\ 360.app/Contents/Info.plist</string>
+		<string>%RECIPE_CACHE_DIR%/application_payload/Applications/Autodesk\ Fusion.app/Contents/Info.plist</string>
             </dict>
         </dict>
         <dict>
