@@ -33,7 +33,7 @@
 			<dict>
 				<fail_deleter_silently>True</fail_deleter_silently>
 				<key>path_list</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%-%ARCHITECTURE%-%version%-unsigned.pkg</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%-unsigned.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.smithjw.processors/FriendlyPathDeleter</string>
