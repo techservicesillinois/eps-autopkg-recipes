@@ -36,7 +36,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.hansen-m.pkg.aquamacs</string>
+	<string>com.github.eps-autopkg-recipes.jamf.Aquamacs.sign</string>
 	<key>Process</key>
 	<array>
 		<dict>
