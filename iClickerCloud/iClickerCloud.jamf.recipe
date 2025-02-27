@@ -25,7 +25,7 @@
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
 		<string>%NAME%</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>%NAME%.png</string>
+		<string>iClickerCloud.png</string>
 		<key>TESTING_GROUP_NAME</key>
 		<string>Global - Software Testing - Update</string>
 		<key>UPDATE_PREDICATE</key>
