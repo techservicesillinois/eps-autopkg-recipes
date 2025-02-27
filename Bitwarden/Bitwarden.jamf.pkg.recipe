@@ -16,6 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0</string>
     <key>Process</key>
+    <array>
         <dict>
             <key>Processor</key>
             <string>AppPkgCreator</string>
