@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the latest Fetch from Fetch Softworks website and creates a Apple installer pkg.
+
+Optional Values SERIALNUMBER and REGISTRANTNAME when both provided will 
+add a fetch license agreement to 
+/Library/Preferences/com.fetchsoftworks.Fetch.License.plist.
+
+Set SERIALNUMBER to serial number provided in a Fetch license agreement.
+Set REGISTRANTNAME to name used to register a Fetch license agreement.</string>
+    <key>Identifier</key>
+    <string>com.github.eps-autopkg-recipes.jamf.pkg.Fetch</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Fetch</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.3.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.jleggat.download.Fetch</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>PkgRootCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkgroot</key>
+                <string>%RECIPE_CACHE_DIR%/build</string>
+                <key>pkgdirs</key>
+                <dict>
+                    <key>Applications</key>
+                    <string>0775</string>
+                </dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>archive_path</key>
+                <string>%pathname%</string>
+                <key>destination_path</key>
+                <string>%pkgroot%/Applications/</string>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>FetchScriptsPath</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dirname</key>
+                <string>Scripts</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Copier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>source_path</key>
+                <string>%dirpath%</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/Scripts</string>
+                <key>overwrite</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_request</key>
+                <dict>
+                    <key>pkgname</key>
+                    <string>%NAME%-%version%</string>
+                    <key>pkgroot</key>
+                    <string>%pkgroot%</string>
+                    <key>version</key>
+                    <string>%version%</string>
+                    <key>id</key>
+                    <string>%BUNDLEID%</string>
+                <key>scripts</key>
+                <string>%RECIPE_CACHE_DIR%/Scripts</string>
+                    <key>chown</key>
+                    <array>
+                        <dict>
+                            <key>path</key>
+                            <string>Applications</string>
+                            <key>user</key>
+                            <string>root</string>
+                            <key>group</key>
+                            <string>admin</string>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
