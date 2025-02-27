@@ -5,11 +5,11 @@
     <key>Description</key>
     <string>Download recipe for the latest version of iClicker Cloud.</string>
     <key>Identifier</key>
-    <string>com.github.eps-autopkg-recipes.jamf.pkg.iClicker_Cloud</string>
+    <string>com.github.eps-autopkg-recipes.jamf.pkg.iClickerCloud</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>iClicker_Cloud</string>
+        <string>iClicker Cloud</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
