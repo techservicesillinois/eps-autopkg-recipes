@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.eps-autopkg-recipes.jamf.iClicker_Cloud</string>
+	<string>com.github.eps-autopkg-recipes.jamf.iClickerCloud</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -34,7 +34,7 @@
 	<key>MinimumVersion</key>
 	<string>2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.eps-autopkg-recipes.jamf.pkg.iClicker_Cloud</string>
+	<string>com.github.eps-autopkg-recipes.jamf.pkg.iClickerCloud</string>
 	<key>Process</key>
 		<array>
 			<dict>
