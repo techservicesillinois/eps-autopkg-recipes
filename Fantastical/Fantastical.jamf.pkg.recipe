@@ -16,7 +16,8 @@
     <key>ParentRecipe</key>
     <string>com.github.valdore86.download.fantastical</string>
     <key>Process</key>
- <dict>
+    <array>
+ 		<dict>
             <key>Processor</key>
             <string>PkgRootCreator</string>
             <key>Arguments</key>
