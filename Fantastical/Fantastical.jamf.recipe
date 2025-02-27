@@ -60,8 +60,6 @@
 				<dict>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
-					<key>pkg_path</key>
-					<string>%dmg_path%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
