@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Package recipe for the latest version of Fantastical.</string>
+    <key>Identifier</key>
+    <string>com.github.eps-autopkg-recipes.jamf.pkg.Fantastical</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Fantastical</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.0.4</string>
+    <key>ParentRecipe</key>
+    <string>com.github.valdore86.download.fantastical</string>
+    <key>Process</key>
+    <array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>dmg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+				<key>dmg_root</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+			</dict>
+			<key>Processor</key>
+			<string>DmgCreator</string>
+		</dict>
+    </array>
+</dict>
+</plist>
