@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest version of Audacity and builds a package.</string>
+    <string>Builds the Aquamacs package.</string>
     <key>Identifier</key>
-    <string>com.github.eps-autopkg-recipes.jamf.Aquamacs.pkg</string>
+    <string>com.github.eps-autopkg-recipes.jamf.pkg.Aquamacs</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
