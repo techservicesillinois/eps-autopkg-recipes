@@ -65,7 +65,7 @@ Set REGISTRANTNAME to name used to register a Fetch license agreement.</string>
                     <key>version</key>
                     <string>%version%</string>
                     <key>id</key>
-                    <string>%BUNDLEID%</string>
+                    <string>com.fetchsoftworks.fetch</string>
                     <key>chown</key>
                     <array>
                         <dict>
