@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of JASP and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.grahampugh-recipes.jamf.JASP.pkg</string>
+	<string>com.github.eps-autopkg-recipes.jamf.jasp.pkg</string>
 	<key>Input</key>
 	<dict>
 		<key>BUNDLE_ID</key>
