@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Builds the Kaltura Capture package.</string>
+    <key>Identifier</key>
+    <string>com.github.eps-autopkg-recipes.jamf.pkg.KalturaCapture</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Kaltura Capture</string>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.joshua-d-miller.download.kalturacapture</string>
+    <key>MinimumVersion</key>
+    <string>2.0.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%pathname%/%NAME%.app/Contents/Info.plist</string>
+            </dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+        </dict>
+    </array>
+</dict>
+</plist>
