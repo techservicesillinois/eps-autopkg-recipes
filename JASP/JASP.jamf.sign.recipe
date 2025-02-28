@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Signs the JASP pkgs for Jamf.</string>
+	<key>Identifier</key>
+	<string>com.github.eps-autopkg-recipes.jamf.jasp.sign</string>
+	<key>Input</key>
+	<dict>
+		<key>SIGNING_CERTIFICATE</key>
+		<string>Jamf_AutoPkg</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.eps-autopkg-recipes.jamf.jasp.pkg</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%pkg_path%</string>
+				<key>signing_cert</key>
+				<string>%SIGNING_CERTIFICATE%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.rtrouton.SharedProcessors/PkgSigner</string>
+		</dict>
+			<dict>
+			<key>Arguments</key>
+			<dict>
+				<fail_deleter_silently>True</fail_deleter_silently>
+				<key>path_list</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%-unsigned.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.smithjw.processors/FriendlyPathDeleter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
