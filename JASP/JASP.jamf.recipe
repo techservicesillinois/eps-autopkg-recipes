@@ -30,6 +30,8 @@
 			<string>JASP</string>
 			<key>SELF_SERVICE_ICON</key>
 			<string>JASP.png</string>
+			<key>SIGNING_CERTIFICATE</key>
+			<string>Jamf_AutoPkg</string>
 			<key>TESTING_GROUP_NAME</key>
 			<string>Global - Software Testing - Update</string>
 			<key>UPDATE_PREDICATE</key>
