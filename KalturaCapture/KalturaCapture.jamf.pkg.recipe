@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Builds the Kaltura Capture package.</string>
+    <string>Builds the KalturaCapture package.</string>
     <key>Identifier</key>
     <string>com.github.eps-autopkg-recipes.jamf.pkg.KalturaCapture</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Kaltura Capture</string>
+        <string>KalturaCapture</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.joshua-d-miller.download.kalturacapture</string>
