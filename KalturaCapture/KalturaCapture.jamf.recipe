@@ -13,7 +13,7 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>JamfSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Kaltura Capture</string>
+		<string>KalturaCapture</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Software Testing (AutoPkg)</string>
 		<key>POLICY_NAME</key>
@@ -21,11 +21,11 @@
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Kaltura Capture offers users the ability to record both screen and camera in just one click. It also includes a new automatic slide detection feature – if a user has a PowerPoint presentation in presenter mode when recording the screen, Kaltura Capture automatically detects and captures it, allowing the viewer to search and browse by slide.</string>
+		<string>KalturaCapture offers users the ability to record both screen and camera in just one click. It also includes a new automatic slide detection feature – if a user has a PowerPoint presentation in presenter mode when recording the screen, Kaltura Capture automatically detects and captures it, allowing the viewer to search and browse by slide.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
 		<string>%NAME%</string>
 		<key>SELF_SERVICE_ICON</key>
-		<string>KalturaCapture.png</string>
+		<string>%NAME%.png</string>
 		<key>TESTING_GROUP_NAME</key>
 		<string>Global - Software Testing - Update</string>
 		<key>UPDATE_PREDICATE</key>
