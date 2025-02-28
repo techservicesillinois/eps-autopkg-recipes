@@ -5,7 +5,7 @@
 		<key>Comment</key>
 		<string>ARCHITECTURE variable use: Intel "x86_64" or Apple Silicon "arm64"</string>
 		<key>Identifier</key>
-		<string>com.github.autopkg.grahampugh-recipes.jamf.JASP</string>
+		<string>com.github.eps-autopkg-recipes.jamf.jasp</string>
 		<key>Input</key>
 		<dict>		
 			<key>ARCHITECTURE</key>
@@ -13,7 +13,7 @@
 			<key>CATEGORY</key>
 			<string>STEM</string>
 			<key>GROUP_NAME</key>
-			<string>Global - %NAME% - Testing</string>
+			<string>Global - JASP - Testing -</string>
 			<key>GROUP_TEMPLATE</key>
 			<string>JamfSmartGroupTemplate.xml</string>
 			<key>NAME</key>
@@ -21,15 +21,15 @@
 			<key>POLICY_CATEGORY</key>
 			<string>Software Testing (AutoPkg)</string>
 			<key>POLICY_NAME</key>
-			<string>Global - %NAME% - Testing</string>
+			<string>Global - JASP - Testing -</string>
 			<key>POLICY_TEMPLATE</key>
 			<string>JamfPolicyTemplate.xml</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
 			<string>Visual report designer for JasperReports.</string>
 			<key>SELF_SERVICE_DISPLAY_NAME</key>
-			<string>%NAME%</string>
+			<string>JASP</string>
 			<key>SELF_SERVICE_ICON</key>
-			<string>%NAME%.png</string>
+			<string>JASP.png</string>
 			<key>TESTING_GROUP_NAME</key>
 			<string>Global - Software Testing - Update</string>
 			<key>UPDATE_PREDICATE</key>
@@ -38,7 +38,7 @@
 		<key>MinimumVersion</key>
 		<string>2.3</string>
 		<key>ParentRecipe</key>
-		<string>com.github.bochoven.recipes.pkg.JASP</string>
+		<string>com.github.eps-autopkg-recipes.jamf.jasp.pkg</string>
 		<key>Process</key>
 		<array>
 			<dict>
