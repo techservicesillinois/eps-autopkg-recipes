@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>MacTeX</string>
+        <string>MacTeX</string>    
     </dict>
     <key>MinimumVersion</key>
     <string>0.3.1</string>
@@ -49,6 +49,19 @@
             </dict>
             <key>Processor</key>
             <string>PkgRootCreator</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_payload_path</key>
+                <string>%RECIPE_CACHE_DIR%/Unpack/GUI-Applications-Start.pkg/Payload</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/application_payload</string>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+            <key>Processor</key>
+            <string>PkgPayloadUnpacker</string>
         </dict>
         <dict>
             <key>Processor</key>
