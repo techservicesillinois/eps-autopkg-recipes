@@ -12,8 +12,8 @@
 			<string>Global - %NAME% - Testing</string>
 			<key>GROUP_TEMPLATE</key>
 			<string>JamfSmartGroupTemplate.xml</string>
-			<key>LATEST_RELEASE</key>
-			<string>FIREFOX_DEVEDITION</string>
+			<key>RELEASE</key>
+			<string>devedition-latest</string>
 			<key>NAME</key>
 			<string>FirefoxDeveloper</string>
 			<key>POLICY_CATEGORY</key>
@@ -56,6 +56,21 @@
 				</dict>
 				<key>Processor</key>
 				<string>StopProcessingIf</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>script_name</key>
+					<string>Set Firefox-ESR Name</string>
+					<key>script_path</key>
+					<string>/Users/Shared/AutoPkg/RecipeOverrides/Jamf/Firefox/FirefoxESR/Set Firefox-ESR Name.sh</string>
+					<key>replace_script</key>
+					<string>False</string>
+					<key>script_category</key>
+					<string>Software</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfScriptUploader</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
