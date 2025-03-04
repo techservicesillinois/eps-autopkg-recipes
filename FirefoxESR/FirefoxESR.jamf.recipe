@@ -12,8 +12,8 @@
 			<string>Global - %NAME% - Testing</string>
 			<key>GROUP_TEMPLATE</key>
 			<string>JamfSmartGroupTemplate.xml</string>
-			<key>LATEST_RELEASE</key>
-			<string>FIREFOX_ESR</string>
+			<key>RELEASE</key>
+			<string>devedition-latest</string>
 			<key>NAME</key>
 			<string>FirefoxESR</string>
 			<key>POLICY_CATEGORY</key>
@@ -23,7 +23,7 @@
 			<key>POLICY_TEMPLATE</key>
 			<string>JamfPolicyTemplate.xml</string>
 			<key>SELF_SERVICE_DESCRIPTION</key>
-			<string>A free and open source web browser from Mozilla. ESR (Extended Support Release) Version</string>
+			<string>A free and open source web browser from Mozilla. ESR (Extended Support Release) Version.</string>
 			<key>SELF_SERVICE_DISPLAY_NAME</key>
 			<string>Firefox-ESR</string>
 			<key>SELF_SERVICE_ICON</key>
@@ -56,21 +56,6 @@
 				</dict>
 				<key>Processor</key>
 				<string>StopProcessingIf</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>script_name</key>
-					<string>Set Firefox-ESR Name</string>
-					<key>script_path</key>
-					<string>/Users/Shared/AutoPkg/RecipeOverrides/Jamf/Firefox/FirefoxESR/Set Firefox-ESR Name.sh</string>
-					<key>replace_script</key>
-					<string>False</string>
-					<key>script_category</key>
-					<string>Software</string>
-				</dict>
-				<key>Processor</key>
-				<string>com.github.grahampugh.jamf-upload.processors/JamfScriptUploader</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
