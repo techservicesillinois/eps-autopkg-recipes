@@ -13,7 +13,7 @@
 			<key>GROUP_TEMPLATE</key>
 			<string>JamfSmartGroupTemplate.xml</string>
 			<key>RELEASE</key>
-			<string>devedition-latest</string>
+			<string>esr-latest</string>
 			<key>NAME</key>
 			<string>FirefoxESR</string>
 			<key>POLICY_CATEGORY</key>
