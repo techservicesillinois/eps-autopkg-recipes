@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.eps-autopkg-recipes.jamf.Qlab5</string>
+	<string>com.github.eps-autopkg-recipes.jamf.QLab5</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -13,7 +13,7 @@
 		<key>GROUP_TEMPLATE</key>
 		<string>JamfSmartGroupTemplate.xml</string>
 		<key>NAME</key>
-		<string>Qlab5</string>
+		<string>QLab5</string>
 		<key>POLICY_CATEGORY</key>
 		<string>Software Testing (AutoPkg)</string>
 		<key>POLICY_NAME</key>
@@ -25,7 +25,7 @@
 
 Qlab's design is based around concepts and conventions of the theatrical, broadcast, and cinematic industries, but it is intended to be flexible and adaptable enough to be used in many other contexts.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
-		<string>Qlab</string>
+		<string>QLab</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>%NAME%.png</string>
 		<key>TESTING_GROUP_NAME</key>
@@ -36,7 +36,7 @@ Qlab's design is based around concepts and conventions of the theatrical, broadc
 	<key>MinimumVersion</key>
 	<string>2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.eps-autopkg-recipes.jamf.pkg.Qlab5</string>
+	<string>com.github.eps-autopkg-recipes.jamf.pkg.QLab5</string>
 	<key>Process</key>
 		<array>
 			<dict>
