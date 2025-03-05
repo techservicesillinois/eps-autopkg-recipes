@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.eps-autopkg-recipes.jamf.Scratch 3</string>
+	<string>com.github.eps-autopkg-recipes.jamf.Scratch3</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
