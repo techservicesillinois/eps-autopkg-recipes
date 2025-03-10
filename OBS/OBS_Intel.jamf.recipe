@@ -115,7 +115,7 @@
         			<key>path_list</key>
         			<array>
            	 			<string>%pkg_path%</string>
-           	 			<strung>%pathname%</string>
+           	 			<string>%pathname%</string>
         			</array>
     			</dict>
 			</dict>
