@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Identifier</key>
-	<string>com.github.eps-autopkg-recipes.jamf.QGIS</string>
+	<string>com.github.eps-autopkg-recipes.jamf.SolsticeClient</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
