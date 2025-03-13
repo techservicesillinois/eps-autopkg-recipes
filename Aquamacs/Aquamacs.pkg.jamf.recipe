@@ -24,8 +24,6 @@
                 <string>%pathname%/Aquamacs.app</string>
                 <key>bundleid</key>
                 <string>org.gnu.Aquamacs</string>
-                <key>version</key>
-                <string>CFBundleShortVersionString</string>
             </dict>
             <key>Processor</key>
             <string>AppPkgCreator</string>
