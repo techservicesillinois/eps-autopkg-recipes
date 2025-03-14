@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>packages the latest version of MacTeX</string>
+    <string>packages the latest version of Pandoc</string>
     <key>Identifier</key>
     <string>com.github.eps-autopkg-recipes.jamf.pkg.Pandoc</string>
     <key>Input</key>
