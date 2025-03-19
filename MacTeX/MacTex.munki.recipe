@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Download the latest version of MacTeX and imports it into Munki.
+
+Set the DERIVE_MIN_OS variable to a non-empty string to set the minimum_os_version via MunkiInstallsItemsCreator. This requires a minimum AutoPkg version of 2.7 please update if you're not already running it.</string>
+    <key>Identifier</key>
+    <string>com.github.eps-autopkg-recipes.munki.MacTeX</string>
+    <key>Input</key>
+    <dict>
+    	<key>DERIVE_MIN_OS</key>
+        <string>YES</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/mactex</string>
+        <key>NAME</key>
+        <string>MacTeX</string>
+        <key>INSTALLS_ARRAY_APP</key>
+        <string>LaTeXiT</string>
+    	<key>pkginfo</key>
+    	<dict>
+    		<key>catalogs</key>
+    		<array>
+    			<string>testing</string>
+    		</array>
+            <key>category</key>
+            <string>Mathematics</string>
+            <key>developer</key>
+            <string>TeX Users Group</string>
+            <key>display_name</key>
+            <string>MacTeX</string>
+    		<key>description</key>
+    		<string>MacTeX is a product produced by the MacTeX TeXnical working group of the TeX Users Group (TUG). It is the Macintosh component of the TeX Collection DVD, the reference edition of TeX distributed by TeX User Groups across the world. The reference edition runs on Mac OS X, Windows, GNU/Linux, various BSD Unix systems, and most other computer architectures.
+            </string>
+    		<key>name</key>
+    		<string>%NAME%</string>
+            <key>display_name</key>
+            <string>%NAME%</string>
+    		<key>unattended_install</key>
+    		<true/>
+            <key>postuninstall_script</key>
+            <string>#!/bin/bash
+            /bin/rm -rf /Applications/TeX
+            </string>
+    	</dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.7</string>
+    <key>ParentRecipe</key>
+    <string>com.github.joshua-d-miller.download.MacTeX</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>additional_pkginfo</key>
+                <dict>
+                    <key>version</key>
+                    <string>%version%</string>
+                </dict>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiPkginfoMerger</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgCopier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>source_pkg</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/%NAME%.pkg</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pkg_path%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
