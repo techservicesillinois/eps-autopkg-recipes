@@ -18,6 +18,8 @@
 		<string>Global - Deployment - %NAME%</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplate.xml</string>
+		<key>SELF_SERVICE_ICON</key>
+		<string>MicrosoftCompanyPortal.png</string>
 		<key>UPDATE_PREDICATE</key>
 		<string>pkg_uploaded == False</string>
 	</dict>
