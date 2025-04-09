@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Imports Adobe Acrobat DC Unified into Jamf.</string>
+	<string>Imports Adobe Acrobat DC Unified package into Jamf.</string>
 	<key>Identifier</key>
 	<string>com.github.eps-autopkg-recipes.jamf.AdobeAcrobatDCUnified</string>
 	<key>Input</key>
@@ -26,7 +26,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.dataJAR-recipes.download.Adobe Acrobat DC Unified Application</string>
+	<string>com.github.eps-autopkg-recipes.jamf.pkg.AdobeAcrobatDCUnified</string>
 	<key>Process</key>
 	<array>
 		<dict>
