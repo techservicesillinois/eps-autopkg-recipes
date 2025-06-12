@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of Setup Manager and creates a package.</string>
+	<key>Identifier</key>
+	<string>com.github.eps-autopkg-recipes.jamf.JamfSetupManager</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Deployment</string>
+		<key>NAME</key>
+		<string>Jamf_Setup_Manager</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == False</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.pkg.JamfSetupManager</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>predicate</key>
+					<string>%UPDATE_PREDICATE%</string>
+				</dict>
+				<key>Processor</key>
+				<string>StopProcessingIf</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			</dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_name</key>
+				<string>%NAME%-%version%.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
