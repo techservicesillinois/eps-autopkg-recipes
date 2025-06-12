@@ -22,8 +22,6 @@
             <string>Web, Cloud</string>
             <key>developer</key>
             <string>Salesforce</string>
-            <key>display_name</key>
-            <string>Slack</string>
     		<key>description</key>
     		<string>Slack is a popular team collaboration and communication platform used by businesses to facilitate teamwork and information sharing. It provides features like channels for organized conversations, direct messaging for private chats, and integrations with various apps and tools.</string>
     		<key>name</key>
