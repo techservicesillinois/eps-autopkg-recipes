@@ -22,24 +22,24 @@
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Arguments</key>
 			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>predicate</key>
-					<string>%UPDATE_PREDICATE%</string>
-				</dict>
-				<key>Processor</key>
-				<string>StopProcessingIf</string>
+				<key>predicate</key>
+				<string>%UPDATE_PREDICATE%</string>
 			</dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
 			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>pkg_category</key>
-					<string>%CATEGORY%</string>
-				</dict>
-				<key>Processor</key>
-				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
 			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_name</key>
