@@ -13,7 +13,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>global_free/chatgpt</string>
 		<key>NAME</key>
-		<string>ChatGPT</string>
+		<string>chatgpt</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -28,6 +28,8 @@
 			<string>OpenAI</string>
 			<key>display_name</key>
 			<string>ChatGPT Desktop</string>
+			<key>icon_name</key>
+			<string>global/chatgpt.png</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>supported_architectures</key>
