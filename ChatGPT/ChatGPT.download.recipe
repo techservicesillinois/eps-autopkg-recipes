@@ -11,7 +11,7 @@
 		<key>DOWNLOAD_URL</key>
 		<string>https://persistent.oaistatic.com/sidekick/public/ChatGPT.dmg</string>
 		<key>NAME</key>
-		<string>ChatGPT</string>
+		<string>chatgpt</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.2</string>
