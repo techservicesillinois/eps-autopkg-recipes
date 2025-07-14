@@ -11,7 +11,7 @@
 		<key>MUNKI_CATEGORY</key>
 		<string>AI</string>
 		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps</string>
+		<string>global_free/chatgpt</string>
 		<key>NAME</key>
 		<string>ChatGPT</string>
 		<key>pkginfo</key>
@@ -30,6 +30,10 @@
 			<string>ChatGPT Desktop</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
