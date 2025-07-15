@@ -12,7 +12,7 @@
         <string>Pure Data</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.orbsmiv.download.Pd</string>
+    <string>com.github.eps-autopkg-recipes.jamf.download.PureData</string>
     <key>MinimumVersion</key>
     <string>1.0</string>
     <key>Process</key>
@@ -46,16 +46,16 @@
                 	<key>options</key>
                 	<string>purge_ds_store</string>
                 	<key>chown</key>
-                	<array>
-                    	<dict>
-                        	<key>path</key>
-                        	<string>%pkgroot%</string>
-                        	<key>user</key>
-                        	<string>root</string>
-                        	<key>group</key>
-                        	<string>admin</string>
-                    	</dict>
-                	</array>
+                    <array>
+                        <dict>
+                            <key>path</key>
+                            <string>Applications</string>
+                            <key>user</key>
+                            <string>root</string>
+                            <key>group</key>
+                            <string>admin</string>
+                        </dict>
+                    </array>
             	</dict>
         	</dict>
         </dict>
