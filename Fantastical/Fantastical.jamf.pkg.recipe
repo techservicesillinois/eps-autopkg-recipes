@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>1.0.4</string>
     <key>ParentRecipe</key>
-    <string>com.github.valdore86.download.fantastical</string>
+    <string>com.github.eps-autopkg-recipes.jamf.download.Fantastical</string>
     <key>Process</key>
     <array>
  		<dict>
